@@ -34,11 +34,6 @@ class CashRegister
     end
   end
 
-  def items()
-    (self).item!?
-    return :items
-  end
-
   def void_last_transaction()
     @total -= @last_transaction_amount
   end
