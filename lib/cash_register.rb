@@ -34,9 +34,12 @@ class CashRegister
     end
   end
 
+  def items()
+    (self).item!?
+    return @items
+  end
 
   def void_last_transaction()
-    last_item = @total.pop
     @total -= @last_transaction_amount
   end
 
